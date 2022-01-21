@@ -10,10 +10,43 @@
 </head>
 <body>
     
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/img/Cedar-Rapids-Web-Design_Logo_300x40.svg" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#heroSlide">Home</a></li>
+                    <li><a href="#servicesSlide">Services</a></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <div id="fullpage">
+        <section class="section hero">
+            <img src="assets/img/Cedar-Rapids-Web-Design_Logo_500.svg" alt="">
+            <video class="" type="video/mp4" preload="auto" data-autoplay="true" webkit-playsinline="1" playsinline="true" src="assets/img/Cedar-Rapids-Web-Design_Hero_Video-compressed.mp4" autoplay muted loop=""></video>
+        </section>
+        <section class="section consultation">
+        
+        </section>
+        <section class="section services">
 
-
-
-
+        </section>
+        
+        
+        <section class="section mobile">
+        
+        </section>
+        <section class="section seo">
+        
+        </section>
+    </div>
 
 
 
@@ -28,8 +61,8 @@
 
         <script type="text/javascript">
             var myFullpage = new fullpage('#fullpage', {
-                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-                sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+                anchors: ['heroSlide', 'consultationSlide', 'servicesSlide', 'mobileSlide', 'seoSlide'],
+                verticalCentered: false,
                 scrollOverflow: true
             });
         </script>
