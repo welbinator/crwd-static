@@ -8,7 +8,6 @@ body,
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  
 }
 html {
   font-size: 16px;
@@ -62,6 +61,25 @@ header {
     }
   }
 }
+section {
+  text-align: center;
+
+  &.seo {
+    color: black;
+
+    .slide-content {
+      background: white;
+      padding: 50px;
+    }
+    .video-overlay {
+      background: rgba(255, 255, 255, 0.5);
+    }
+    button {
+      border: 3px solid black;
+      color: black;
+    }
+  }
+}
 video.background {
   position: absolute;
   top: 0;
@@ -72,38 +90,41 @@ video.background {
 }
 .video-overlay {
   position: absolute;
-  width:100%;
+  width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
-  z-index: 1; 
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 .slide-content {
-
   z-index: 2;
   display: grid;
   place-items: center;
   width: 100%;
-  
-  
+  gap: 20px;
+
+  button {
+    border: 3px solid white;
+    background: transparent;
+    padding: 10px 15px;
+    color: white;
+    font-size: clamp(1em, 2vw, 1.3em);
+  }
 }
 h2.slide-heading {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 2.5em;
-  
+  // margin-bottom: 20px;
 }
 section {
   display: grid;
   place-items: center;
 }
 .hero {
-
-
   img {
     position: relative;
     z-index: 1;
     width: 600px;
     max-width: 80vw;
   }
-  
 }

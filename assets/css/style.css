@@ -72,6 +72,28 @@ header nav ul li a {
   color: #757575;
 }
 
+section {
+  text-align: center;
+}
+
+section.seo {
+  color: black;
+}
+
+section.seo .slide-content {
+  background: white;
+  padding: 50px;
+}
+
+section.seo .video-overlay {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+section.seo button {
+  border: 3px solid black;
+  color: black;
+}
+
 video.background {
   position: absolute;
   top: 0;
@@ -96,10 +118,19 @@ video.background {
   display: grid;
   place-items: center;
   width: 100%;
+  gap: 20px;
+}
+
+.slide-content button {
+  border: 3px solid white;
+  background: transparent;
+  padding: 10px 15px;
+  color: white;
+  font-size: clamp(1em, 2vw, 1.3em);
 }
 
 h2.slide-heading {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 2.5em;
 }
